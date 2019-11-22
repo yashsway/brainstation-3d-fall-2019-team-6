@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import Main from './component/Main/Main'
 import ProductDetails from './component/ProductDetails/ProductDetails'
@@ -20,7 +19,7 @@ function App() {
       <BrowserRouter>
       <Switch>
        <Route path="/" exact component={Main}></Route>
-       <Route path="/ProductDetails" component={ProductDetails}></Route>
+       <Route path="/ProductDetails/:id" component={ProductDetails}></Route>
       </Switch>
       </BrowserRouter>
     </div>

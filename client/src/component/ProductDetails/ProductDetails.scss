@@ -5,14 +5,13 @@ body {
 .detail {
     &__header-container{
         width: 457px;
-        height: 88px;
         margin: 0 0 43px 214px;
         border-bottom: 19px solid #fbe4e4;  
     }
 
     &__header {
         font-family: Lora;
-        font-size: 80px;
+        font-size: 40px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
@@ -21,9 +20,7 @@ body {
         text-align: center;
         color: #000000; 
         text-align: left;
-        
-        
-
+        margin: 40px 0 0 0;
     }
 
     &__container{
