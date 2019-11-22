@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import Main from './component/Main/Main'
+import ProductDetails from './component/ProductDetails/ProductDetails'
 import './App.scss';
 import { Helmet } from 'react-helmet';
-import Main from './component/Main/Main'
+
 
 
 function App() {
@@ -14,7 +17,12 @@ function App() {
       <Helmet>
         <title>Your App Title Here</title>
       </Helmet>
-      <Main/>
+      <BrowserRouter>
+      <Switch>
+       <Route path="/" exact component={Main}></Route>
+       <Route path="/ProductDetails" component={ProductDetails}></Route>
+      </Switch>
+      </BrowserRouter>
     </div>
   );
 }
