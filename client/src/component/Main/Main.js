@@ -10,16 +10,17 @@ import Hero from '../Hero/Hero'
 
 class Main extends React.Component{
     state={
-        list:[]
+        list:[],
+        show:false
     }
     clickHandler=(name)=>{
      
         if (name ==="Gurgaon"){
-            this.setState({list:dataTwo})
+            this.setState({list:dataTwo ,show:true})
         }else if (name === "Noida"){
-            this.setState({list:dataThree})
+            this.setState({list:dataThree ,show:true})
         }else if (name === "New Delhi"){
-            this.setState({list:dataOne})
+            this.setState({list:dataOne ,show:true})
         }
     }
 
@@ -30,14 +31,16 @@ class Main extends React.Component{
 
     render(){
         return(
-        <>
+        <section>
         <Hero clickHandler={this.clickHandler}/>
-         <h1 className="Chefe">Chefe</h1>
+        {this.state.show? 
+        <><h1 className="Chefe">Chefe</h1>
          <section className="resturant-section">
              <p className="Your-Best-Restaurant">Your Best Restaurant List</p>
              {this.state.list.map(resturant=>{return  <Resturantlist data={resturant}/>})}
+             </section> </>: null}
          </section>
-         </>
+    
         )
     }
 }
