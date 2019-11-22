@@ -11,7 +11,7 @@ class ProductDetails extends React.Component {
     }
 
     componentDidMount() {
-    
+      window.scroll(0,0)
        this.data.find(element => {
             if (this.props.match.params.id == element.RestaurantID) {
                 this.setState({rest:element})
