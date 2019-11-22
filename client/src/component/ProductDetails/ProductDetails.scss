@@ -3,7 +3,122 @@ body {
 }
 
 .detail {
-    &__side-menu__list{
-        list-style: none;
+    &__header-container{
+        width: 457px;
+        margin: 0 0 43px 214px;
+        border-bottom: 19px solid #fbe4e4;  
     }
+
+    &__header {
+        font-family: Lora;
+        font-size: 40px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000; 
+        text-align: left;
+        margin: 40px 0 0 0;
+    }
+
+    &__container{
+        display: flex;
+    }
+
+    &__side-menu {
+        padding: 0 100px 0 216px;
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            list-style: none;
+            padding: 0;
+
+            &__item-grey{
+                font-family: LibreFranklin;
+                font-size: 20px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #bbbbbb;
+                padding-bottom: 24px; 
+            }
+
+            &__item{
+                font-family: Lora;
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #121212;
+                padding-bottom: 24px; 
+                
+            }
+        }
+    }
+
+    &__info{
+        text-align: left;
+
+        &__address, &__phone{
+            font-family: LibreFranklin;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        &__description {
+            width: 820px;
+            height: 240px;
+            font-family: Lora;
+            font-size: 28px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.75;
+            letter-spacing: normal;
+            color: #000000;
+            margin: 32px 0 45px 0;
+        }
+        
+        &__background-img{
+            background-image: url(../../images/01_indianaccent.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 820px;
+            height: 445px;
+        }
+
+        &__button {
+            width: 410px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px 0 rgba(136, 134, 134, 0.5);
+            border: solid 5px #fbe4e4;
+            background-color: #fbe4e4;
+            font-family: LibreFranklin;
+            font-size: 36px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: rgba(0, 0, 0, 0.7);
+            margin: 70px 0 234px 205px;
+        }
+        
+    }
+    
 }
