@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-
 import { Helmet } from 'react-helmet';
+import Main from './component/Main/Main'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Helmet>
         <title>Your App Title Here</title>
       </Helmet>
-  
+      <Main/>
     </div>
   );
 }
