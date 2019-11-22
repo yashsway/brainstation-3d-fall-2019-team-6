@@ -10,6 +10,11 @@
     letter-spacing: normal;
     text-align: center;
     color: #000000;
+    transition-property:transform;
+    transition-duration: 1s;
+  }
+  .Restaurant:hover{
+    transform: scale(1.15);
   }
 
   .Rating{
