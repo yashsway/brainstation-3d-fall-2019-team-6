@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
-// import {Switch,React}
 import Main from './component/Main/Main'
-
+import ProductDetails from './component/ProductDetails/ProductDetails'
+import './App.scss';
 import { Helmet } from 'react-helmet';
+
+
 
 function App() {
   return (
@@ -18,10 +20,9 @@ function App() {
       <BrowserRouter>
       <Switch>
        <Route path="/" exact component={Main}></Route>
-       {/* <Route path="/ProductDetails" component={ProductDetails}></Route> */}
+       <Route path="/ProductDetails" component={ProductDetails}></Route>
       </Switch>
       </BrowserRouter>
-     
     </div>
   );
 }

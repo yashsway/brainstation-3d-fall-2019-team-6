@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.detail {
+    &__side-menu__list{
+        list-style: none;
+    }
+}
