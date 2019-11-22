@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.scss';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+// import {Switch,React}
+import Main from './component/Main/Main'
 
 import { Helmet } from 'react-helmet';
 
@@ -13,7 +15,13 @@ function App() {
       <Helmet>
         <title>Your App Title Here</title>
       </Helmet>
-  
+      <BrowserRouter>
+      <Switch>
+       <Route path="/" exact component={Main}></Route>
+       {/* <Route path="/ProductDetails" component={ProductDetails}></Route> */}
+      </Switch>
+      </BrowserRouter>
+     
     </div>
   );
 }

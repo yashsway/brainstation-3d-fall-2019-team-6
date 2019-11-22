@@ -1,0 +1,49 @@
+.Restaurant{
+    width: 280px;
+    height: 62px;
+    font-family: Lora;
+    font-size: 49px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+
+  .Rating{
+    width: 80px;
+    height: 25px;
+    font-family: LibreFranklin;
+    font-size: 21px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+  .Cuisine{
+    width: 88px;
+    height: 25px;
+    font-family: LibreFranklin;
+    font-size: 21px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin-left:26px;
+  }
+  .Your-Resturant{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:50px;
+    padding-bottom:47px;
+  }
